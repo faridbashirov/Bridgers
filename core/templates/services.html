@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-description %}
+
+<meta name="description" content="Bridger DS is a full-service marketing agency. We offer digital marketing strategy, SEO, Google Ads, email marketing, Yelp, web development etc. for clients">
+
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+{% endblock %}
+
+{% block title %} 20+ Marketing Services | Digital Marketing Agency {% endblock %}
+
+{% block content %}
+
+<div class="service-content-section w-100 pt-5">
+  <div class="container-fluid mt-5 pt-5">
+    <div class="row d-flex align-items-center">
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4 col-xxl-5 d-flex flex-column align-items-center service-content-header">
+        <h1>Providing
+          20+ Services</h1>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 col-xxl-7 content-section">
+        <p>Bridger DS Inc. is a full-stack digital marketing agency that takes a holistic
+          approach to your online marketing and communications to develop a seamlessly integrated digital marketing plan.
+          Our aim is to help your business connect with the audience that is most relevant to your goals. Our experienced
+          team has collaborated with numerous clients like yours, helping them to achieve their online objectives.
+        </p>
+        <p>
+          Delivering digital marketing services for Guaranteed Success.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="main-service-content w-100 pb-5">
+  <div class="container-fluid pt-5">
+    
+    <div class="row">
+      {% for service in services_21 %}
+      <div
+        class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-start justify-content-between mb-4 service-item py-2">
+        <img src="{{ service.icon.url }}" alt="">
+        <div class="content">
+          <h4>{{ service.name }}</h4>
+          <p style="text-align: justify;">{{ service.small_description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div> 
+  </div>
+</div>
+
+<!--Form-->
+
+<div class="service-form-div w-100 py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <img src="{% static 'images/BridgerDs_Services-min.jpg' %}" alt=""
+          class="w-100">
+      </div>
+      <div class="col-xl-6 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="service-form-heading d-flex flex-column">
+          <!-- <h4>Quality & Efficience</h4> -->
+          <h2 class="mb-3">
+            Looking for professional services
+          </h2>
+
+          <p class="mb-4">Fill out the form we will contact you within 24 hours</p>
+          {% include 'includes/messages.html' %}
+          <form action="" method="post" id="service-contact-form">
+            {% csrf_token %}
+            <!-- <input type="text" class="form-control mb-3 w-100" placeholder="Full Name"> -->
+            {{ form.name }}
+            <!-- <input type="text" class="form-control mb-3 w-100" placeholder="Company Name"> -->
+            {{ form.company }}
+            <!-- <input type="text" class="form-control mb-3 w-100" placeholder="Website"> -->
+            {{ form.website }}
+            <!-- <textarea rows="3" class="form-control mb-3 w-100" placeholder="Text"></textarea> -->
+            {{ form.message }}
+             <!-- <textarea rows="3" class="form-control mb-3 w-100" placeholder="Text"></textarea> -->
+            {{form.capthca}}
+            <button class="btn btn-submit px-4 mt-3" type="submit">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

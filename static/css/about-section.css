@@ -1,0 +1,107 @@
+/*About section*/
+.about-section {
+    background-color: #f9f9f9;
+}
+
+.about-content {
+
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.about-content h6 {
+    color: #2a4ae8;
+    font-weight: 600;
+}
+
+
+
+.about-content h1 {
+    color: #212529;
+    font-weight: 800;
+}
+
+.about-element h1 {
+    margin-left: 5%;
+
+}
+
+.about-element i {
+    font-size: 36px;
+}
+
+
+.about-element img {
+    width: 50px;
+    object-fit: cover;
+}
+
+@media(min-width:991px) and (max-width:1200px) {
+    .about-image img {
+        height: 420px;
+    }
+
+}
+
+@media(max-width:991px) {
+    .about-element h5{
+        font-size: 17px;
+    }
+    .more-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-row {
+        margin-top: 10%;
+    }
+}
+
+@media(max-width:575px) {
+    .about-element {
+        margin-bottom: 5% !important;
+    }
+}
+
+@media(max-width:991px) {
+    .about-image {
+        margin-bottom: 10% !important;
+    }
+
+    .about-element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:1023px) {
+    .about-div {
+        justify-content: center !important;
+    }
+}
+
+.btn-more {
+    background-color: #2a4ae8;
+    color: #fff;
+    border-radius: 20px;
+}
+.btn-more:hover{
+/* background-color: #2a4ae8; */
+background-image: linear-gradient(to right bottom, #2a4ae8, #0061ed, #0073ed, #0084e9, #0092e3, #009ce1, #00a4dc, #00acd6, #00b4d5, #00bbd2, #00c2ce, #04c8c8);
+}
+@media(max-width:768px) {
+    .about-row {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .about-element {
+        margin-bottom: 10%;
+    }
+    .about-content h1{
+        font-size: 26px !important;
+    }
+}

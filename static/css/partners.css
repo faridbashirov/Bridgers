@@ -1,0 +1,113 @@
+/*partner section*/
+.partner-header p {
+    font-size: 18px;
+    color: #727272;
+}
+
+.partner-header h1 {
+    font-weight: 800;
+    /* font-size: 50px; */
+}
+
+.partner-images img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.johnlogo{
+    -webkit-filter: grayscale(100%) invert(1) !important;
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) invert(1) !important;
+}
+.partner-section {
+
+    background-color: #f9f9f9;
+}
+
+.partner-section {
+
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.partner-section .element {
+    width: 100%;
+    object-fit: cover;
+}
+.element {
+    width: 100%;
+    object-fit: cover;
+}
+
+.partner-text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 42px;
+}
+.flex-container img{
+    border-radius: 20px;
+    height: 60px;
+    cursor: pointer;
+    width: 100% !important;
+    object-fit: contain;
+
+}
+@media(min-width:992px){
+    .flex-container{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: end !important;
+        width: 90% !important;
+    }
+}
+@media(max-width:767px){
+    .flex-container img{
+        height: 50px !important;
+        object-fit: contain;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .flex-container img{
+        height: 60px !important;
+        object-fit: contain;
+    }
+}
+/* @media(min-width:768px){
+    .flex-container img{
+        width: unset !important;
+    }
+} */
+.owl-item{
+    /* width: 164px !important; */
+    margin-right: unset !important;
+}
+@media(max-width:991px){
+    .owl-item{
+        margin-right: 17px !important;
+    }
+}
+@media(max-width:1000px){
+    .partner-images{
+        height: 150px !important;
+    }
+    .owl-carousel .owl-stage-outer{
+        height: 80px !important;
+    }
+}
+.owl-nav button.owl-next{
+    position: absolute !important;
+    right: 0 !important;
+    font-size: 40px !important;
+    top: 0 !important;
+    margin: 0 -40px !important;
+}
+.owl-nav button.owl-prev{
+    position: absolute !important;
+    font-size: 40px !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 -40px !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset !important;
+    color: unset !important;
+}

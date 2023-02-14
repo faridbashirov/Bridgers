@@ -1,0 +1,243 @@
+
+.brand img {
+    width: 50px;
+  }
+  
+  .p1:hover, .p2:hover {
+      opacity: .3;
+    cursor: pointer;
+  }
+/*   
+  h4 {
+      color: grey;
+      font-size: 24px;
+      font-weight: 400;
+  } */
+  
+  /* #portfolio p {
+      color: grey;
+      font-size: 12px;
+      font-weight: 200;
+  }
+  
+  .content {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px;
+      text-align: center;
+  } */
+  
+  .single-content img {
+      width: 290px;
+      height: 100%;
+      margin: 10px;
+  }
+  
+  .filters {
+      width: 100%;
+      text-align: center;
+  }
+  
+ .filters ul {
+      list-style: none;
+      padding: 20px 0;
+  }
+  
+  .filters ul li {
+      display: inline;
+      padding: 10px 25px;
+      font-size: 14px;
+      color: #636363;
+      font-weight: 400;
+      cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+  }
+  
+  .filters ul li:hover {
+      color: #a6a6a6;
+  }
+  
+  .filters ul li.active {
+      color: #ccc;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+  }
+  .hiring-button{
+    border-radius: 30px;
+    border: 2px solid #000;
+    width: max-content;
+    font-weight: 600;
+  }
+  .career-section{
+    font-family: 'Nunito',sans-serif;
+  }
+  .career-heading h1{
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .career-heading{
+    width: 60%;
+  }
+  .career-heading p{
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  
+  .button {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    border-radius: 30px;
+    background: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid #192437;
+    margin: 0 10px 0 0;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #192437;
+    color: #fff;
+}
+
+.button:active,
+.button.is-checked {
+    background-color: #192437;
+    color: #fff !important;
+    outline: none;
+}
+
+.button-group {
+    margin: 20px 0;
+    /* text-align: center; */
+}
+
+.button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.filter-element{
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.filter-element p{
+    font-size: 17px;
+}
+.filter-element h3{
+    font-weight: 600;
+}
+.remote{
+    margin-right: 20px;
+    border: 2px solid #192437;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.remote i{
+    margin-right: 6px;
+    font-size: 18px;
+}
+@media(max-width:992px){
+    .button-group{
+        text-align: center;
+    }
+.career-heading{
+    width: 100% !important;
+}
+h3{
+    font-size: 18px !important;
+}
+h1{
+    font-size: 30px !important;
+}
+p,span,button{
+    font-size: 14px !important;
+}
+}
+@media(max-width:767px){
+    .apply{
+        margin-top: 10%;
+    }
+    .remote{
+        font-size: 14px !important;
+        margin-right: 5px !important;
+    }
+}
+.apply i{
+    margin-top: -8px;
+    margin-left: 7px;
+}
+.join-team{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+  background: #17347c;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  font-family: 'Nunito',sans-serif;
+}
+.join-team img{
+    border-radius: 5px !important;
+}
+.join-team h1{
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+}
+@media(max-width:767px){
+    .join-team{
+        width: 96% !important;
+        text-align: center;
+    }
+}
+.btn-send{
+    border: none !important;
+    padding: 6px 10px;
+    color: #2a4ae8;
+
+}
+.btn-send:hover {
+    background-image: linear-gradient(to right bottom, #2a4ae8, #0061ed, #0073ed, #0084e9, #0092e3, #009ce1, #00a4dc, #00acd6, #00b4d5, #00bbd2, #00c2ce, #04c8c8);
+ 
+    cursor: pointer;
+  }
+.custom-file-button{
+    border-radius: 0 !important;
+    border: none !important;
+}
+.custom-file-button label {
+    /* background-color: #2a4ae8; */
+    border: none !important;
+    color: #17347c !important;
+}
+.input-group-text {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    font-weight: 600 !important;
+}
+.custom-file-button input[type=file] {
+    margin-left: -2px !important;
+    display: none;
+  }
+  .custom-file-button input[type=file]::-webkit-file-upload-button {
+    display: none;
+  }
+  .custom-file-button input[type=file]::file-selector-button {
+    display: none;
+  }
+  .input-group label:hover {
+    background-image: linear-gradient(to right bottom, #2a4ae8, #0061ed, #0073ed, #0084e9, #0092e3, #009ce1, #00a4dc, #00acd6, #00b4d5, #00bbd2, #00c2ce, #04c8c8);
+ 
+    cursor: pointer;
+  }
+  #inputGroupFile{
+    width: 0px !important;
+    color: #fff;
+  }

@@ -1,0 +1,55 @@
+.content {
+    margin-left: 15px;
+}
+
+.content h4 {
+    font-weight: 500 !important;
+}
+
+.service-header p {
+    font-size: 18px;
+    color: #727272;
+}
+
+.services-section {
+
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.service-header h1 {
+    font-weight: 800;
+    /* font-size: 50px; */
+}
+
+.btn-get {
+    /* text-transform: uppercase; */
+    background-color: #2a4ae8;
+    color: #fff;
+    border-radius: 20px;
+    /* font-size: 17px !important; */
+}
+.btn-get:hover{
+    background-image: linear-gradient(to right bottom, #2a4ae8, #0061ed, #0073ed, #0084e9, #0092e3, #009ce1, #00a4dc, #00acd6, #00b4d5, #00bbd2, #00c2ce, #04c8c8);
+ 
+}
+@media(max-width:991px) {
+    .services {
+        margin-top: 10% !important;
+    }
+
+    .service-header {
+        align-items: center !important;
+    }
+
+    .service-header h1 {
+        text-align: center !important;
+    }
+}
+.services-section img{
+    width: 70px;
+    height: 70px;
+    vertical-align: text-top;
+    object-fit: cover;
+    margin-top: -10px;
+    
+}

@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: 
+Disallow: /admin/
+
+
+
+Host: https://www.bridgerds.com
+Sitemap: https://www.bridgerds.com/sitemap.xml

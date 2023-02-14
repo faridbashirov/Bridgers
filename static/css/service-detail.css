@@ -1,0 +1,160 @@
+.services-details-items .services-sidebar {
+    padding-right: 35px;
+}
+.services-details-items .services-sidebar .single-widget:first-child {
+    margin-top: 0;
+}
+.services-details-items .services-sidebar .widget-title {
+    font-weight: 800;
+    margin-top: -5px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.services-details-items .services-sidebar .services-list a {
+    display: block;
+    padding: 18px 25px;
+    background: #ffffff;
+    margin-top: 15px;
+    position: relative;
+    color: #000 !important;
+    z-index: 1 !important;
+    font-weight: 500;
+    overflow: hidden;
+    border: 3px solid #e7e7e7;
+    border-radius: 5px;
+}
+.services-details-items .services-sidebar .services-list li.current-item a, .services-details-items .services-sidebar .services-list li a:hover {
+    border: 3px solid #086AD8;
+    color: #086AD8 !important;
+}
+.services-details-items .services-sidebar .single-widget.quick-contact {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+.services-details-items .services-sidebar .single-widget {
+    margin-top: 50px;
+}
+.services-details-items .services-sidebar .single-widget.quick-contact .content {
+    padding: 50px 30px;
+    position: relative;
+    z-index: 1;}
+    .services-details-items .services-sidebar .single-widget.quick-contact::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: #232323;
+        opacity: 0.7;
+    }
+    .services-details-items .services-sidebar .single-widget {
+        margin-top: 50px;
+    }
+    .services-details-items .services-sidebar .single-widget.quick-contact .content i {
+        display: inline-block;
+        font-size: 25px;
+        color: #ffffff;
+        margin-bottom: 35px;
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        background: #086AD8;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+    .services-details-items .services-sidebar .single-widget.quick-contact .content h2 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 0;
+        margin-top: 25px;
+    }
+    .services-details-items .services-sidebar .widget-title {
+        font-weight: 800;
+        margin-top: -5px;
+        position: relative;
+        text-transform: capitalize;
+        z-index: 1;
+        font-size: 20px;
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+    .services-details-items .services-sidebar .widget-title::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        width: 50px;
+        border-bottom: 2px solid #086AD8;
+    }
+    .services-details-items .services-sidebar .single-widget.brochure ul {
+        margin-top: 15px;
+    }
+    .services-details-items .services-sidebar .single-widget.brochure li:first-child a {
+        margin-top: 0;
+    }
+    .services-details-items .services-sidebar .single-widget.brochure a {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        background: #086AD8;
+        color: #ffffff;
+        padding: 20px 30px;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    .services-single-content img{
+        border: none;
+    outline: none;
+    max-width: 100%;
+    }    
+    .services-details-items .services-single-content h2 {
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    .services-details-area .features {
+        margin: 40px 0;
+    }
+    .services-details-items .services-sidebar .single-widget.brochure a i {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 16px;
+    }
+    body{
+        font-family: 'Nunito',sans-serif;
+    }
+    .services-details-area .features i {
+        display: inline-block;
+        font-size: 50px;
+        color: #086AD8;
+        margin-right: 25px;
+    }
+    .services-details-area .features .col-lg-6 {
+        display: flex;
+    }
+    .wpb_wrapper ul{
+        list-style: disc;
+        padding-left: 1.5rem;
+    }
+
+    .services-details-items .services-sidebar .services-list a::after {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }

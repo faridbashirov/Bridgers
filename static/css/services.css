@@ -1,0 +1,130 @@
+.service-content-header p {
+    font-size: 18px;
+    color: #727272;
+}
+.service-content-section {
+
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.service-content-header h1 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+@media(max-width:991px) {
+    
+
+    .service-content-header {
+        align-items: center !important;
+    }
+
+    .service-content-header h1 {
+        text-align: center !important;
+    }
+}
+.site-heading{
+    font-family: 'Nunito', sans-serif;
+
+}
+.site-heading h4 {
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #437eeb;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.site-heading h2 {
+    display: block;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+.service-form-div{
+    font-family: 'Nunito', sans-serif;
+
+}
+.service-form-div h4 {
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #437eeb;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.service-form-div h2 {
+    display: block;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+.service-item h4{
+    font-weight: 700;
+}
+.main-service-content{
+    font-family: 'Nunito',sans-serif;
+}
+.service-item img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-top: -10px;
+}
+.service-item:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+@media (max-width:992px){
+    .site-heading p{
+        width: unset !important;
+    }
+}
+.btn-submit{
+    
+    background-color: #2a4ae8;
+    color:#fff;
+    border-radius: 20px;
+}
+@media(min-width:767px) and (max-width:860px){
+    .service-form-div img{
+        height: 620px !important;
+    }
+}
+@media(min-width:861px) and (max-width:991px){
+    .service-form-div img{
+        height: 550px !important;
+    }
+}
+@media(min-width:992px) and (max-width:1024px){
+    .service-form-div img{
+        height: 580px !important;
+    }
+}
+@media(min-width:1024px){
+    .service-form-div img{
+        height: 500px !important;
+    }
+}
+@media(max-width:767px){
+    .service-form-div img{
+        height: 350px !important;
+        margin-bottom: 15px;
+    }
+}
+.btn-submit:hover{
+    background-image: linear-gradient(to right bottom, #2a4ae8, #0061ed, #0073ed, #0084e9, #0092e3, #009ce1, #00a4dc, #00acd6, #00b4d5, #00bbd2, #00c2ce, #04c8c8);
+    color: #fff !important;
+}
+.service-item a{
+    color: #212529 !important;
+}

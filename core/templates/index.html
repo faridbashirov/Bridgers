@@ -1,0 +1,589 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-description %}
+
+<meta name="description" content="We help businesses scale by bringing data-driven strategy and tactics together with a full-service marketing approach. Get in touch, we are happy to help.">
+
+{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/main-header.css' %}">
+<link rel="stylesheet" href="{% static 'css/about-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/blogs-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/faq.css' %}">
+<link rel="stylesheet" href="{% static 'css/partners.css' %}">
+<link rel="stylesheet" href="{% static 'css/project-complete.css' %}">
+<link rel="stylesheet" href="{% static 'css/services-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/work-process.css' %}">
+
+
+{% endblock %}
+
+{% block title %} Full-Stack Digital Marketing Agency | Bridger DS Inc. {% endblock %}
+
+
+
+
+
+{% block content %}
+
+{% include 'includes/header.html' %}
+
+
+
+<!--About section-->
+
+<div id="about" class="about-section py-2">
+  <div class="container-fluid py-5">
+    <div class="row d-flex align-items-center justify-content-between about-div">
+      <div class="col-12 col-sm-12 col-md-9 col-lg-6 col-xl-6 col-xxl-6 about-image">
+        <img class="w-100" src="{% static 'images/bridger-second-section.jpg' %}" alt="">
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-5 about-content">
+        <!-- <h6 class="mb-2">ABOUT US</h6> -->
+        <h1 class="mb-3 text-center text-sm-start">Enjoy Full-Service Digital Marketing Expertise</h1>
+        <p>We are ready to help you acquire promising customers. We develop a user-friendly website, activate Social
+          Media channels, and manage your Google Ads, Youtube, Yelp, Angi and Angie's List accounts. We create
+          impactful SEO strategies to boost traffic and increase website ranking.</p>
+        <div class="row mb-3 about-row">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 about-element">
+            <div class="d-flex align-items-center">
+              <img src="{% static 'images/check-2.png' %}" alt="" style="vertical-align: middle;">
+              <h1 id="nbr">128</h1>
+            </div>
+            <h5 class="text-capitalize">Completed projects</h5>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 about-element">
+            <div class="d-flex align-items-center">
+              <img src="{% static 'images/comp-2.png' %}" alt="">
+              <h1 id="nbr1">105</h1>
+            </div>
+            <h5 class="text-capitalize">Happy Customers</h5>
+          </div>
+
+
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 more-div">
+          <a href="{% url 'about' %}" class="btn btn-more px-3 py-1">More about us</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Services section-->
+
+<div id="services" class="services-section py-4">
+  <div class="container-fluid">
+    <div class="row d-flex align-items-center">
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-start service-header">
+        <h1 class="mb-4">Providing 20+ Services</h1>
+        <p class="mb-0 mb-sm-4 text-center text-sm-start">Delivering digital marketing services for Guaranteed Success.</p>
+
+        <!-- <a href="" class="btn btn-get px-3">Read more</a> -->
+        <a href="{% url 'services' %}" class="btn btn-get px-3 py-1 d-none d-sm-block">Learn more</a>
+
+      </div>
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 services d-flex align-items-center justify-content-center flex-column">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-6 d-flex align-items-start justify-content-between mb-4">
+            <img src="{% static 'images/digital-marketing-strategy.png' %}" alt="">
+            <div class="content">
+              <h4>Digital Marketing Strategy</h4>
+              <p>We Develop a digital marketing strategy to establish an internet presence through online channels
+                such as paid, earned and owned media to o reach specific business goals.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-start justify-content-between mb-4">
+            <img src="{% static 'images/advertising-management.png' %}" alt="">
+            <div class="content">
+              <h4>Advertising Management</h4>
+              <p>We manage and control the various advertising activities, including Google Ads, Yelp, Social Media
+                ads etc. to communicate with a brand's target market and influence the consumer's purchase decisions
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex align-items-start justify-content-between mb-4 d-none d-sm-flex">
+            <img src="{% static 'images/branding.png' %}" alt="">
+            <div class="content">
+              <h4>Branding and Design</h4>
+              <p>Creating a Brand identity that typically refers to key brand elements such as the logo, colour
+                scheme, typography, 3D and other design components that make a brand stand out from competitors, and
+                be recognizable to consumers.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex align-items-start justify-content-between mb-4">
+            <img src="{% static 'images/web-development.png' %}" alt="">
+            <div class="content">
+              <h4>Web Development</h4>
+              <p>Our full-stack web developers create and maintain websites on either WordPress or Independent
+                frameworks. They are responsible to develop the back end in Python (Django, Flask) and to design the
+                front end in HTML, CSS, JS, and REACT to build responsive, user-friendly websites.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-start justify-content-between mb-4 d-none d-sm-flex">
+            <img src="{% static 'images/social-media--manegment.png' %}" alt="">
+            <div class="content">
+              <h4>Social Media Management</h4>
+              <p>Depending on the company’s goals we manage social media accounts, monitor engagement and mentions,
+                grow a community of customers and report and analyse the results of the efforts</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-start justify-content-between mb-4 ">
+            <img src="{% static 'images/seo-optimization.png' %}" alt="">
+            <div class="content">
+              <h4>SEO Optimization</h4>
+              <p>We improve the quality and quantity of website traffic (unpaid, and organic) from search engines. The
+                essential SEO toolset: keyword research, link building, site audits, page optimization, rank tracking,
+                reporting, and more.</p>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+        <a href="{% url 'services' %}"
+          class="btn btn-get px-3 py-1 d-sm-none d-flex">Learn more</a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--Our work process-->
+
+<div class="work-process w-100">
+
+  <div class="container-fluid">
+    <!-- <h6 class="mb-2 text-center">Process</h6> -->
+    <h1 class="mb-2 text-center">Our Work Process</h1>
+    <p class="mb-5 text-center">We know what it takes to create something remarkable. Combining strategic thinking and
+      abilities with impactful execution, we’ll elevate your product/service and help you reach the untapped potential
+      you always planned.
+      The following four stages are at the core of how we work:
+    </p>
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills row">
+      <li class="nav-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 pulse">
+        <a class="nav-link active py-4" data-bs-toggle="pill" href="#analysis">Analysing Data</a>
+      </li>
+      <li class="nav-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 pulse">
+        <a class="nav-link py-4" data-bs-toggle="pill" href="#modules">Building Strategy</a>
+      </li>
+      <li class="nav-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 pulse">
+        <a class="nav-link py-4" data-bs-toggle="pill" href="#assistant">Executing Campaigns</a>
+      </li>
+      <li class="nav-item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 pulse">
+        <a class="nav-link py-4" data-bs-toggle="pill" href="#ai">Measuring Results</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content py-5">
+      <div class="tab-pane active" id="analysis">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-5 mx-auto mx-lg-0  tab-image">
+            <img class="w-100" src="{% static 'images/b.png' %}" alt="">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 tab-pane-content">
+            <h2 class="mb-3">Data-Driven Business Strategy</h2>
+            <p class="mb-3">
+              We gather data by conducting business diagnostics and Marketing audits, including Company, Customer and
+              Competitive analysis, to understand business interfaces, needs and capabilities to choose the right
+              strategic way.
+            </p>
+            <p class="mb-3">Obtaining Quality Information</p>
+            <ul>
+              <li class="mb-3">Collecting - Surveys. Focus group, A/B testing, Big data,etc.</li>
+              <li class="mb-3">Analyzing - Regression and Conjoint analysis</li>
+              <li class="mb-3">Presenting - We put all findings into a more readable format.</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="modules">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-5 mx-auto mx-lg-0  tab-image">
+            <img class="w-100" src="{% static 'images/a.png' %}" alt="">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 tab-pane-content">
+            <h2 class="mb-3">Strategic Business Planning & Roadmap</h2>
+            <p class="mb-3">
+              Starting with developing business models and Strategy formulation, we help you understand the big picture.
+              Everything we do is to find the right business direction; it’s the roadmap that aligns where we’re going
+              (your goals) with how we’ll get there (your marketing activities).
+            </p>
+            <p>Building Strategy porcess</p>
+            <ul>
+              <li class="mb-3">Understanding Business Needs</li>
+              <li class="mb-3">Identifying Opportunities</li>
+              <li class="mb-3">Aligning Goals and Activities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="assistant">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-5 mx-auto mx-lg-0   tab-image">
+            <img class="w-100" src="{% static 'images/esas.png' %}" alt="">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 tab-pane-content">
+            <h2 class="mb-3">Digital Campaign Execution</h2>
+            <p class="mb-3">
+              We develop action plans, define customer segments, identify value propositions and clarify the right
+              communication channels for all types of business models, and execute digital campaigns to achieve
+              predefined goals.
+            </p>
+            <p>Some of the channels</p>
+            <ul>
+              <li class="mb-3">Google Ads - SEO, Google Ads, Google Local etc.</li>
+              <li class="mb-3">Social Media - Facebook, Instagram, LinkedIn etc.</li>
+              <li class="mb-3">Local platforms- Yelp, Angi List</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="ai">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-5 mx-auto mx-lg-0  tab-image">
+            <img class="w-100" src="{% static 'images/c.png' %}" alt="">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 tab-pane-content">
+            <h2 class="mb-3">Measuring Marketing Efforts</h2>
+            <p class="mb-3">
+              Measuring the impact of marketing efforts against strategic goals can provide insight into the behaviours
+              of your consumer. It keeps your messaging aligned with your consumers’ values and can even open up a new
+              audience!
+            </p>
+            <ul>
+              <li class="mb-3">Improved Efficiency- real-time measurement helps to improve efficiency</li>
+              <li class="mb-3">Better ROI - Acquiring more customers and keeping audience engaged</li>
+              <li class="mb-3">Data-Driven Decisions - data will be used for further projects</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="work-mobile-process w-100 mb-5">
+
+  <div class="container-fluid">
+    <!-- <h6 class="mb-2 text-center">Process</h6> -->
+    <h1 class="mb-2 text-center">Our Work Process</h1>
+    <p class="mb-5 text-justify">We know what it takes to create something remarkable. Combining strategic thinking and
+      abilities with impactful execution, we’ll elevate your product/service and help you reach the untapped potential
+      you always planned.
+      The following four stages are at the core of how we work:
+    </p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Analysing Data
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- <h2 class="mb-3">Analysing Data</h2> -->
+            <h2 class="mb-3">Data-Driven Business Strategy</h2>
+            <p class="mb-3">
+              We gather data by conducting business diagnostics and Marketing audits, including Company, Customer and
+              Competitive analysis, to understand business interfaces, needs and capabilities to choose the right
+              strategic way.
+            </p>
+            <p class="mb-3">Obtaining Quality Information</p>
+            <ul>
+              <li class="mb-3">Collecting - Surveys. Focus group, A/B testing, Big data, social listening etc.</li>
+              <li class="mb-3">Analyzing - Regression and Conjoint analysis</li>
+              <li class="mb-3">Presenting - Using a graph, we put all findings into a more readable format</li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Building on Strategy
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h2 class="mb-3">Strategic Business Planning & Roadmap</h2>
+            <p class="mb-3">
+              Starting with developing business models and Strategy formulation, we help you understand the big picture.
+              Everything we do is to find the right business direction; it’s the roadmap that aligns where we’re going
+              (your goals) with how we’ll get there (your marketing activities).
+            </p>
+            <p>Building Strategy porcess</p>
+            <ul>
+              <li class="mb-3">Understanding Business Needs</li>
+              <li class="mb-3">Identifying Opportunities</li>
+              <li class="mb-3">Aligning Goals and Activities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Executing Campaigns
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h2 class="mb-3">Digital Campaign Execution</h2>
+            <p class="mb-3">
+              We develop action plans, define customer segments, identify value propositions and clarify the right
+              communication channels for all types of business models, and execute digital campaigns to achieve
+              predefined goals.
+            </p>
+            <p>Some of the channels</p>
+            <ul>
+              <li class="mb-3">Google Ads - SEO, Google Ads, Google Local etc.</li>
+              <li class="mb-3">Social Media - Facebook, Instagram, LinkedIn etc.</li>
+              <li class="mb-3">Local platforms- Yelp, Angi List</li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingFourth">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Measuring results
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFourth"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h2 class="mb-3">Measuring Marketing efforts</h2>
+            <p class="mb-3">
+              Measuring the impact of marketing efforts against strategic goals can provide insight into the behaviours
+              of your consumer. It keeps your messaging aligned with your consumers’ values and can even open up a new
+              audience!
+            </p>
+            <ul>
+              <li class="mb-3">Improved Efficiency- real-time measurement helps to improve efficiency</li>
+              <li class="mb-3">Better ROI - Acquiring more customers and keeping audience engaged</li>
+              <li class="mb-3">Data-Driven Decisions - data will be used for further projects</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Premium partners-->
+
+<div class="partner-section w-100">
+  <div class="container-fluid">
+    <div class="row d-flex align-items-center justify-content-between py-3">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 partner-header">
+        <h1>Trusted 100+ <br class="d-none d-lg-block"> clients</h1>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 partner-images">
+        <div id="owl-demo1" class="owl-carousel owl-theme mt-4">
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div> <img src="{% static 'images/clients/ambulance.png' %}" alt=""></div>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="flex-container">
+              <div class="d-flex align-items-center justify-content-center w-100"> <img class="w-100"
+                  src="{% static 'images/clients/counter.jpeg' %}" alt=""></div>
+            </div>
+
+
+          </div>
+          <div class="item">
+            <div class="flex-container  mb-4">
+              <div class="w-100"> <img src="{% static 'images/clients/foxy.png' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex-container">
+              <div class="w-100"> <img src="{% static 'images/clients/john.png' %}" alt="" class="johnlogo">
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div class="w-100"> <img src="{% static 'images/clients/numbersquad.svg' %}" alt=""></div>
+            </div>
+
+
+          </div>
+          <div class="item">
+            <div class="flex-container">
+              <div class="w-100"> <img src="{% static 'images/clients/promaidz.png' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+
+            <div class="flex-container">
+              <div class="w-100"> <img src="{% static 'images/clients/zebrano.png' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div class="w-100"> <img src="{% static 'images/clients/tgm.png' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div  class="w-100"> <img src="{% static 'images/clients/barberia.jpeg' %}" alt=""></div>
+            </div>
+           
+
+          </div>
+          <div class="item">
+            <div class="flex-container">
+              <div  class="w-100"> <img src="{% static 'images/clients/thefix.jpeg' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex-container">
+              <div  class="w-100"> <img src="{% static 'images/clients/prowill.png' %}" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Latest Blogs-->
+
+<div class="blogs w-100 py-5">
+  <div class="container-fluid">
+    <div class="blog-content">
+      <h1 class="mt-4 text-center">Latest Blogs</h1>
+    </div>
+    <div class="row mt-3">
+      {% for blog in blogs %}
+      <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+        <div class="blog-item w-100" style="position: relative;">
+            <div class="thumb">
+            <a href="{% url 'blog_detail' blog.slug %}">
+            <img src="{{ blog.image.url }}">           
+            </a>
+          </div>
+          <div class="blog-info">
+          
+            <h5>
+              <a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a>
+            </h5>
+            <p>{{ blog.small_description }}</p>
+            <a class="btn btn-simple px-3 py-1 fw-500" style="position: absolute;bottom: 20px;" href="{% url 'blog_detail' blog.slug %}">Read more</a>
+
+            </div>
+            </div>
+    </div>
+      {% endfor %}
+
+
+      <div class="d-md-none col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+        <div class="blog-item w-100" style="position: relative;">
+          <div class="thumb">
+            <a href="{% url 'blog_detail' 4th_blog.slug %}">
+              <img src="{{ 4th_blog.image.url }}">
+
+            </a>
+          </div>
+          <div class="blog-info">
+            <div class="meta">
+              
+      </div>
+      <h5>
+      <a href="{% url 'blog_detail' 4th_blog.slug %}">{{ 4th_blog.title }}</a>
+      </h5>
+      <p>{{ 4th_blog.small_description }}</p>
+      <a class="btn btn-simple px-3 py-1 fw-500" style="position: absolute;bottom: 20px;" href="blog-detail.html">Read more</a>
+ </div>
+
+
+        </div>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-center">
+        <a href="{% url 'blogs' %}" style="width: unset !important;"
+        class="btn-simple px-3 py-1 d-sm-none d-flex">Read more</a>
+      </div>
+    
+    </div>
+   
+
+
+
+  </div>
+</div>
+
+<!--Moving squares-->
+<div class="area">
+
+</div>
+
+
+
+{% endblock %}
+
+
+
+
+
+{% block js %}
+
+<script type="text/javascript">
+  var typing = new Typed(".text", {
+    strings: ["Digital Solutions", "Future Success", "Customer Satisfaction", "Business Growth", ],
+    typeSpeed: 100,
+    backSpeed: 40,
+    loop: true,
+  });
+</script>
+<script type="text/javascript">
+  function incNbr() {
+    incEltNbr("nbr");
+  }
+
+  incEltNbr("nbr");
+
+  function incNbr() {
+    incEltNbr("nbr1");
+  }
+
+  incEltNbr("nbr1");
+</script>
+
+{% endblock %}

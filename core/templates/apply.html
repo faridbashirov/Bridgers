@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/apply.css' %}">
+{% endblock %}
+
+{% block title %}
+Apply
+{% endblock %}
+
+{% block content %}
+  <!--Apply form section-->
+
+  <div class="apply-section w-100 py-5 mt-5">
+    <div class="container-fluid mt-5">
+        <div class="row d-flex align-items-start justify-content-between">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+            
+            <h1 class="mb-4">Product Designer</h1>
+            <div class="d-flex align-items-center mt-4 mb-4">
+                <div class="remote py-2 px-3">
+                    <i class="fa fa-map-marker"></i><span>100% remote</span>
+                </div>
+                <div class="remote py-2 px-3">
+                    <i class="fa fa-clock"></i><span>Full time</span>
+                </div>
+            </div>
+            
+            <hr>
+            
+    <h3 class="mb-2">Company Introduction</h3>
+    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum reprehenderit illo corporis ex, nam dolorum! Odit nulla deleniti velit quibusdam!</p>
+    <h3 class="mb-2">Job Description</h3>
+    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum reprehenderit illo corporis ex, nam dolorum! Odit nulla deleniti velit quibusdam!</p>
+    <h3 class="mb-2">Responsibilities</h3>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+    </ul>
+    <h3>Skills and Qualifications</h3>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+    </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+            <form action="" class="w-100 apply-form">
+            <h3 class="mb-4">Apply Now!</h3>
+
+                <div class="inputs mb-4 d-flex align-items-center justify-content-between">
+                    <input type="text" class="form-control py-2" placeholder="Name">
+                    <input type="text" class="form-control py-2" placeholder="Surname">
+                </div>
+                <input type="email" class="form-control mb-4 py-2" placeholder="Email">
+                <div class="input-group custom-file-button mb-4">
+                    <label class="input-group-text" for="inputGroupFile">Upload your CV</label>
+                    <input type="file" class="form-control" id="inputGroupFile">
+                </div>
+                <button type="submit" name="submit" id="submit">Apply <i class="fa fa-paper-plane"></i></button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
+
+  
+
+{% block js %}
+    <script src="{% static 'js/filter.js' %}"></script>
+{% endblock %}

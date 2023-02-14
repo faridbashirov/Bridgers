@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-description %}
+<meta name="description" content="Join the dynamic and fast-paced world of a digital marketing team. Explore career opportunities and learn about what it's like to work at Bridger DS Inc.">
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/career.css' %}">
+{% endblock %}
+
+{% block title %}
+Document
+{% endblock %}
+
+{% block content %}
+
+<!--Career section-->
+
+<!-- <div class="career-section w-100 py-5 mt-5">
+    <div class="container-fluid mt-5">
+        <div class="hiring-button px-3 py-2 mb-4">
+            <span>We're hiring!</span>
+        </div>
+        <div class="career-heading mb-5">
+            <h1>Be part of our mission</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deleniti excepturi numquam reiciendis, saepe id odio iure accusantium et magni voluptatem, totam vel</p>
+        </div>
+          <div class="button-group filters-button-group mb-5">
+            <button class="button mb-4 is-checked" data-filter="*">All Projects</button>
+            <button class="button mb-4" data-filter=".refrigerator">Refrigerator</button>
+            <button class="button mb-4" data-filter=".dishwasher">Dishwasher</button>
+            <button class="button mb-4" data-filter=".cooktop">Cooktop</button>
+            <button class="button mb-4" data-filter=".washer">Washer</button>
+            <button class="button mb-4" data-filter=".microwave">Microwave</button>
+        </div>
+
+        <section id="grid-container" class="w-100 transitions-enabled fluid masonry js-masonry grid"
+            style="background-color: transparent !important;">
+            <article class="cooktop main w-100 py-5 filter-element">
+                <div class="w-100">
+                    <div class="row d-flex align-items-start justify-content-between">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
+                            <h3>Product designer</h3>
+                            <p>We are looking for a mid-level product-designer to join our team. </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="remote py-2 px-3">
+                                    <i class="fa fa-map-marker"></i><span>100% remote</span>
+                                </div>
+                                <div class="remote py-2 px-3">
+                                    <i class="fa fa-clock"></i><span>Full time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 d-flex align-items-center justify-content-end apply">
+                          <a href="{% url 'apply' %}" class="text-dark d-flex align-items-center"> <h3>Apply</h3> <i class='fas fa-external-link-alt'></i></a>   </div> 
+
+                    </div>
+                    
+                </div>
+            </article>
+            <article class="cooktop emergency w-100 py-5 filter-element">
+                <div class="w-100">
+                    <div class="row d-flex align-items-start justify-content-between">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
+                            <h3>Product designer</h3>
+                            <p>We are looking for a mid-level product-designer to join our team. </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="remote py-2 px-3">
+                                    <i class="fa fa-map-marker"></i><span>100% remote</span>
+                                </div>
+                                <div class="remote py-2 px-3">
+                                    <i class="fa fa-clock"></i><span>Full time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 d-flex align-items-center justify-content-end apply">
+                          <a href="{% url 'apply' %}" class="text-dark d-flex align-items-center"> <h3>Apply</h3> <i class='fas fa-external-link-alt'></i></a>  </div> 
+
+                    </div>
+                    
+                </div>
+            </article>
+            <article class="cooktop dishwasher w-100 py-5 filter-element">
+                <div class="w-100">
+                    <div class="row d-flex align-items-start justify-content-between">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
+                            <h3>Product designer</h3>
+                            <p>We are looking for a mid-level product-designer to join our team. </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="remote py-2 px-3">
+                                    <i class="fa fa-map-marker"></i><span>100% remote</span>
+                                </div>
+                                <div class="remote py-2 px-3">
+                                    <i class="fa fa-clock"></i><span>Full time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 d-flex align-items-center justify-content-end apply">
+                          <a href="{% url 'apply' %}" class="text-dark d-flex align-items-center"> <h3>Apply</h3> <i class='fas fa-external-link-alt'></i></a> 
+                        </div> 
+
+                    </div>
+                    
+                </div>
+            </article>
+
+            </section>
+
+    </div>
+  </div> -->
+<div class="join-section w-100 py-5 mt-md-5 mt-3">
+    <div class="container-fluid py-md-5">
+        <div class="join-team text-white mt-5 mt-md-0">
+            <div class="row d-flex align-items-center justify-content-between py-5 py-md-3">
+
+                <div class="col-md-6 px-md-5 px-4">
+
+                    {% include 'includes/messages.html' %}  
+                    <form action="" method="post" enctype='multipart/form-data'>
+                        {% csrf_token %}
+                        <h1>Join our team!</h1>
+                        <p>We do not have open positions, but you can upload your updated CV so our HR team can find you.
+
+                        </p>
+                        <div
+                            class="input-group custom-file-button mt-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                            <label class="input-group-text text-white" for="inputGroupFile">Upload your CV</label>
+                            <!-- <input type="file" class="form-control" id="inputGroupFile" value="" title=""> -->
+                            {{ form.resume }}
+                            <button type="submit" name="submit" id="submit" class="btn-send mx-2 bg-white"><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+                </form>
+                <div class="col-md-5">
+                    <img class="w-100" src="{% static 'images/join2.png' %}" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
+{% block js %}
+<script src="{% static 'js/filter.js' %}"></script>
+{% endblock %}

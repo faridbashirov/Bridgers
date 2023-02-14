@@ -1,0 +1,28 @@
+
+.our-skill{
+    font-family: 'Nunito',sans-serif;
+}
+.our-skill h1{
+    font-weight: 700;
+    /* font-size: 40px !important; */
+}
+.our-skill h5{
+    margin-bottom: 30px;
+    
+    font-weight: 500;
+    color: #666666;
+}
+.our-skill p{
+    color: #222;
+    line-height: 28px;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.our-skill  ul li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+    color: #000 !important;
+}

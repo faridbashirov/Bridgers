@@ -1,0 +1,571 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-description %}
+
+<meta name="description" content="Bridger is a full-servirce marketing strategy agency driving results for 100+ small businesses and start-ups.">
+
+{% endblock %}
+
+{% block css %}
+context['title'] = 'Home'
+<link rel="stylesheet" href="{% static 'css/about-page.css' %}">
+<link rel="stylesheet" href="{% static 'css/skill-bar.css' %}">
+{% endblock %}
+
+{% block title %}Growth, Marketing & Sales consulting | Bridger DS Inc.{% endblock %}
+
+
+<body>
+
+  {% block content %}
+
+  <!--About content-->
+
+  <div class="about-content-section w-100 py-2 py-sm-5">
+    <div class="container-fluid mt-5 pt-5">
+      <div class="row d-flex align-items-center">
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4 col-xxl-5 d-flex flex-column align-items-center about-content-header">
+          <h1>Having 5+ years of experience</h1>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 col-xxl-7 content-section">
+          <p>We are a Marketing consultancy firm at the strategy formulation and implementation layer, helping small and
+            medium-sized businesses, entrepreneurs, and startups to create brands, build a digital presence, and execute
+            advertising campaigns. Having 5 years of experience, we have helped hundreds of clients to boost their
+            sales.
+          </p>
+          <p>
+            We Build Brands That Become A Customer Favorites.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Main content-->
+
+  <div class="main w-100 py-3 py-sm-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+          <div class="about-list-element text-white d-flex flex-column">
+            <div class="d-flex align-items-center justify-content-start">
+              <img src="{% static 'images/who-we-are.png' %}" alt="">
+              <h3 class="mb-3 mt-3 mx-1">Who we are</h3>
+            </div>
+
+            <!-- <ul class="about-content-list">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul> -->
+            <p>We are a full-stack marketing firm specializing in delivering comprehensive solutions to enterprises. Our
+              expertise encompasses both strategic and operational aspects of digital marketing, allowing us to create
+              winning strategies for our clients. From website development to SEO and social media management, we have
+              the skills and experience to take your business to the next level. Our team works closely with clients to
+              understand their goals and develop tailored solutions that meet their specific needs. With our commitment
+              to excellence, we have the ability to help businesses succeed in today's fast-paced digital landscape.</p>
+            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut modi nulla nemo ipsam illo expedita unde id inventore maxime accusantium!</p> -->
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+          <div class="about-list-element text-white d-flex flex-column">
+            <div class="d-flex align-items-center justify-content-start">
+              <img src="{% static 'images/what-we-do.png' %}" alt="">
+              <h3 class="mb-3 mt-3 mx-1">What we do</h3>
+            </div>
+            <!-- <ul class="about-content-list">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul> -->
+            <p>Our focus is on enhancing your online presence through our comprehensive digital services. Our expert
+              team offers a cutting-edge website development solution that prioritizes technical proficiency and
+              security. We know how users behave on Search Engines and do our best to deliver On-Page and Off-Page SEO
+              services to get in front of the customer at the right place and time. Our comprehensive approach also
+              includes managing multiple digital channels, including Social Media, Google, Email Marketing, YouTube,
+              Yelp etc. to connect with potential customers who are ready to make a purchase.</p>
+            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut modi nulla nemo ipsam illo expedita unde id inventore maxime accusantium!</p> -->
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+          <div class="about-list-element text-white d-flex flex-column">
+            <div class="d-flex align-items-center justify-content-start">
+              <img src="{% static 'images/how-we-do.png' %}" alt="">
+              <h3 class="mb-3 mt-3 mx-1">How we do</h3>
+            </div>
+            <!-- <ul class="about-content-list">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul> -->
+            <p>Our team of experts has been providing cutting-edge website development and marketing consultancy
+              services for the past 5 years. We have successfully completed over 100 projects for clients in Europe, the
+              United Arab Emirates, Canada and the United States. Our extensive experience in these markets has allowed
+              us to gain a deep understanding of the unique needs and requirements of businesses operating in different
+              regions. We use this knowledge to deliver custom-made solutions that meet the specific goals of each
+              project.</p>
+            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut modi nulla nemo ipsam illo expedita unde id inventore maxime accusantium!</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Our story-->
+
+  <div class="our-story w-100 py-3 py-sm-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 mb-4">
+          <div class="site-heading text-center">
+            <!-- <h4>Our Story</h4> -->
+            <h1 class="mb-4">
+              How we started
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="story-items text-center">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-6 col-sm-6 mb-5 single-item">
+            <div class="item">
+              <span>01</span>
+              <h4>Company started</h4>
+              <p>11/01/2017</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 col-sm-6 mb-5 single-item">
+            <div class="item">
+              <span>02</span>
+              <h4>Reached 100 Customers</h4>
+              <p>18/02/2019</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 col-sm-6 mb-5 single-item">
+            <div class="item">
+              <span>03</span>
+              <h4>Expand US Market</h4>
+              <p>21/09/2020</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 col-sm-6  mb-5 single-item">
+            <div class="item">
+              <span>04</span>
+              <h4>Openned CA Office</h4>
+              <p>24/10/2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Our skills-->
+
+  <div class="our-skill w-100 py-3 py-sm-5">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+          <h1 class="text-center text-sm-start">Our Skill and Staff Qualifications</h1>
+          <h5 class="text-center text-sm-start">We are master in digital marketing strategy and development</h5>
+          <div class="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 d-sm-none mb-4">
+            <img style="height: 500px;object-fit: contain;"
+              src="{% static 'images/about-us-min.jpg' %}" alt="" class="w-100">
+          </div>
+          <p>
+            We’re credited by thought leaders in the digital marketing realm, including</p>
+          <ul class="w-100">
+            <li class="mb-3 fw-500">The Chartered Institute of Marketing qualified</li>
+            <li class="mb-3 fw-500">SOSTAC Planner Certified</li>
+            <li class="mb-3 fw-500">AMA Certified</li>
+            <li class="mb-3 fw-500">Google Ads Certified</li>
+            <li class="mb-3 fw-500">Google Analytics Certified</li>
+            <li class="mb-3 fw-500">Meta Certified</li>
+            <li class="mb-3 fw-500">Hubspot Certified</li>
+          </ul>
+
+
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 d-none d-sm-block">
+          <img style="height: 500px;object-fit: contain;"
+            src="{% static 'images/about-us-min.jpg' %}" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Our partner-->
+
+  <div class="about-partner-section w-100 py-5">
+    <div class="container-fluid">
+      <div class="about-partners-header w-100 mb-5">
+        <h1>Our Staff Works hard to become an Industry Leader
+
+        </h1>
+      </div>
+      <!-- <div class="row d-flex align-items-center justify-content-between">
+        <div class="col-4 col-sm-4 col-md-2 about-logo mb-4">
+          <img class="w-100" src="{% static 'images/about-logo-1.png' %}" alt="">
+        </div>
+        <div class="col-4 col-sm-4 col-md-2 about-logo mb-4">
+          <img class="w-100" src="{% static 'images/about-logo-2.png' %}" alt="">
+        </div>
+        <div class="col-4 col-sm-4 col-md-2 about-logo mb-4">
+          <img class="w-100" src="{% static 'images/about-logo-3.svg' %}" alt="">
+        </div>
+        <div class="col-4 col-sm-4 col-md-2 about-logo mb-4">
+          <img class="w-100" src="{% static 'images/about-logo-4.png' %}" alt="">
+        </div>
+        <div class=" col-4 col-sm-4 col-md-2 about-logo mb-4">
+          <img class="w-100" src="{% static 'images/about-logo-5.png' %}" alt="">
+        </div>
+        <div class="col-4 col-sm-4 col-md-2 about-logo mb-4">
+          <img class="w-100" src="{% static 'images/about-logo-6.png' %}" alt="">
+        </div>
+
+      </div> -->
+
+      <div class="owl-carousel owl-theme w-100 row d-none" id="owl-carousel3">
+
+        <div
+          class="col-3 col-sm-4 col-md-2 about-logo d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/AMA.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-4 col-md-2 about-logo d-flex align-items-center justify-content-center  mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/CIM.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-4 col-md-2 about-logo d-flex align-items-center justify-content-center  mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/DMI.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-2 about-logo  d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/GA.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-2 about-logo  d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/GOOGLE_ADS.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-2 about-logo  d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/GTM.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-2 about-logo  d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/META.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-2 about-logo  d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/SPCP.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-2 about-logo  d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/TCD.png' %}" alt="">
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-2 about-logo  d-flex align-items-center justify-content-center mb-4 item w-100 mb-3">
+          <img src="{% static 'images/partners/WO.png' %}" alt="">
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 partner-images">
+        <div id="owl-demo3" class="owl-carousel owl-theme mt-4">
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div> <img src="{% static 'images/education/ama.jpeg' %}" alt=""></div>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="flex-container">
+              <div class="d-flex align-items-center justify-content-center w-100"> <img class="w-100"
+                  src="{% static 'images/education/cim.png' %}" alt=""></div>
+            </div>
+         
+
+          </div>
+          <div class="item">
+             <div class="flex-container  mb-4">
+            <div  class="w-100"> <img src="{% static 'images/education/dmi.jpeg' %}" alt=""></div>
+          </div>
+          </div>
+         <div class="item">
+          <div class="flex-container">
+            <div  class="w-100"> <img src="{% static 'images/education/fb.png' %}" alt=""></div>
+          </div>
+         </div>
+          
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div  class="w-100"> <img src="{% static 'images/education/ga.png' %}" alt=""></div>
+            </div>
+           
+
+          </div>
+          <div class="item">
+            <div class="flex-container">
+              <div  class="w-100"> <img src="{% static 'images/education/ga.webp' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+           
+            <div class="flex-container">
+              <div  class="w-100"> <img src="{% static 'images/education/gtm.png' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div  class="w-100"> <img src="{% static 'images/education/spcp.png' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div  class="w-100"> <img src="{% static 'images/education/tcd.png' %}" alt=""></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex-container mb-4">
+              <div  class="w-100"> <img src="{% static 'images/education/wo.png' %}" alt=""></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!--Our team-->
+
+  <div class="d-none our-team comp-team w-100 py-5 mt-5">
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="team-element team-element-up">
+          <img src="{% static 'images/team-img1.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="team-element team-element-up">
+          <img src="{% static 'images/team-img2.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="team-element team-element-up">
+          <img src="{% static 'images/team-img3.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="team-element team-element-up-text px-5 d-flex flex-column align-items-start justify-content-center">
+          <h5>Our team</h5>
+          <h1>We Help to Acheive Your Business Goal</h1>
+        </div>
+
+      </div>
+      <div class="row g-0">
+        <div class="team-element team-element-down">
+          <img src="{% static 'images/team-img4.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="team-element team-element-down">
+          <img src="{% static 'images/team-img5.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="team-element team-element-down">
+          <img src="{% static 'images/team-img6.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="team-element team-element-down">
+          <img src="{% static 'images/team-img7.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="team-element team-element-down">
+          <img src="{% static 'images/team-img8.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><a href="" class="social-link text-dark"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="d-none our-team mobile-team w-100 py-5">
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-md-6 col-6 col-sm-6 team-element">
+          <img src="{% static 'images/team-img1.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6  team-element">
+          <img src="{% static 'images/team-img2.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row g-0">
+        <div class="col-md-6 col-6 col-sm-6  team-element">
+          <img src="{% static 'images/team-img3.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6  team-element">
+          <img src="{% static 'images/team-img4.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6  team-element">
+          <img src="{% static 'images/team-img5.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6  team-element">
+          <img src="{% static 'images/team-img6.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6  team-element">
+          <img src="{% static 'images/team-img7.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6  team-element">
+          <img src="{% static 'images/team-img8.jpg'%}" alt="">
+          <div class="team-info bg-white">
+            <h4>Harry Steve</h4>
+            <h6>Web developer</h6>
+          </div>
+          <ul class="member-social">
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div
+          class="col-md-12 col-12 col-sm-12  team-element px-5 d-flex flex-column align-items-start justify-content-center">
+          <h5>Our team</h5>
+          <h1>We Help to Acheive Your Business Goal</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Contact info-->
+
+  <div class="contact-forward-section w-100 py-5">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center justify-content-between">
+        <div class="col-md-7">
+          <h2 class="text-black">No confidence in your digital marketing?</h2>
+          <p class="text-black">Reach out to our experienced digital marketing consultants and achieve better results.
+          </p>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <a href="contact.html" class="btn btn-forward mt-md-0 mt-4 px-3 px-sm-4 py-2 py-sm-3 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {% endblock %}

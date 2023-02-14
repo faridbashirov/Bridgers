@@ -1,0 +1,30 @@
+.project-element h4 {
+    font-weight: 500 !important;
+}
+
+.project-header p {
+    font-size: 18px;
+    color: #727272;
+}
+
+.project-completed {
+
+    font-family: 'Maven Pro', sans-serif !important;
+}
+
+.project-header h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+@media(max-width:768px) {
+    .project-row {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .project-element {
+        margin-bottom: 10%;
+    }
+}

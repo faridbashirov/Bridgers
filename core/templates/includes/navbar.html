@@ -1,0 +1,112 @@
+{% load static %}
+
+<!--Navbar-->
+<nav class="navbar py-3 navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-none d-lg-block" href="{% url 'home' %}"><img src="{% static 'images/2-png.png' %}"
+          style="width: 130px;vertical-align: middle;object-fit: cover;" alt=""></a>
+      <div class="row">
+        <div class="col-4 col-sm-4 col-lg-3 d-flex align-items-center justify-content-between">
+          <button class="navbar-toggler py-2" id="toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand d-block d-lg-none" href="#"><img src="{% static 'images/png-b.png' %}"
+              style="width: 50px;vertical-align: middle;object-fit: cover;" alt=""></a>
+
+        </div>
+      </div>
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mx-4  col-md-9 d-flex justify-content-start align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'services' %}">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blogs' %}">Blogs</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+
+        </ul>
+        <!-- <form class="d-flex col-md-2 d-flex justify-content-end"> -->
+
+        <!-- </form> -->
+      </div>
+      <div class="nav-buttons d-flex align-items-center ">
+        <!-- <a href="#" class="search-btn px-2 px-lg-4"><i class="fa fa-search"></i></a> -->
+        
+        <div class="search px-3">
+          <form role="search" method="get" class="search-form" action="">
+            <label>
+          
+              <input type="search"  class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+            </label>
+            <!-- /<input type="submit" class="search-submit" value="Search" /> -->
+          </form>
+          </div>
+         <button  onclick="toggle_div_fun('sectiontohide');" class="d-sm-none" style="background: transparent;border: none;outline: none;"><img src="{% static 'images/search-icon.png' %}" alt=""></button>
+       
+          <button class="btn btn-success text-white py-2" style="font-size: 15px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          type="button">Free Consulting</button>
+
+          
+      </div>
+      <!-- <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" /> -->
+    
+    </div>
+  </nav>
+
+
+    <!--Mobile navbar-->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item px-3 mb-4">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item px-3 mb-4">
+              <a class="nav-link" href="{% url 'about' %}">About us</a>
+            </li>
+            <li class="nav-item px-3 mb-4">
+              <a class="nav-link" href="{% url 'services' %}">Services</a>
+            </li>
+            <li class="nav-item px-3 mb-4"><a class="nav-link" href="{% url 'blogs' %}"> Blogs </a></li>
+            <!-- <li class="nav-item px-3 mb-4"> <a class="nav-link" href="faq.html">FAQ</a></li> -->
+            <li class="nav-item px-3">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+    
+          </ul>
+          <img style="object-fit: cover;width: 180px;position: absolute;bottom:20px;left:20px" src="{% static 'images/3-PNG.png' %}" alt="">
+
+    
+        </div>
+      </div>
+    
+      <!--Search box-->
+    
+      <div class="mobile-search w-100 py-4"  id="sectiontohide" style="display: none;">
+        <div class="w-100 search-container">
+          <input type="text" id="box" placeholder="Search anything..." class="search__box">
+          <button  onclick="toggle_div_fun('sectiontohide');" class="mt-3" style="background: transparent;border: none;outline: none;"><img src="{% static 'images/search-icon.png' %}" alt=""></button>
+      </div>
+      </div>

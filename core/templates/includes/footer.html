@@ -1,0 +1,164 @@
+  {% load static %}
+  
+  <!--Footer-->
+  <footer class="footer w-100 pt-4 pb-0" id="footer">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-start justify-content-between">
+        <div class="col-12 col-sm-6 col-md-6  col-lg-3 col-xl-3 col-xxl-3  mb-4 mb-md-0">
+          <!-- <h2 class="footer-heading">Colorlib</h2> -->
+          <img style="object-fit: cover;width: 180px;" src="{% static 'images/3-PNG.png' %}" alt="">
+          <p class="mt-1">© 2023 Bridger DS Inc.</p>
+          <div class="footer-social">
+            <div class="row">
+              <div class="col-md-3 social-item"><a target="_blank" href="https://goo.gl/maps/REPVjydqJosk4Eix6" class="text-white"><i class="fa fa-google"></i></a></div>
+              <div class="col-md-3 social-item"><a target="_blank" href="https://www.linkedin.com/company/bridger-digital-solutions" class="text-white"><i class="fa fa-linkedin"></i></a></div>
+              <div class="col-md-3 social-item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100089509301548" class="text-white"><i class="fa fa-facebook"></i></a></div>
+              <div class="col-md-3 social-item"><a target="_blank" href="https://www.instagram.com/bridger.ds/" class="text-white"><i class="fa fa-instagram"></i></a></div>
+            </div>
+          </div>
+          <form  class="d-flex flex-column align-items-center justify-content-between mt-3 subscribe" style="width: 90%;">
+            <div id="subscribeFormInput" class="input-box bg-white d-flex align-items-center justify-content-between w-100 px-2 py-1" style="border-radius: 5px;">
+              <i class="fa fa-envelope" style="vertical-align: middle;font-size: 20px;color: #2a4ae8;"></i>
+              <input name="email" type="email" class="form-control w-100 sbs-input" placeholder="Enter your email" style="border: none !important;">
+              <button type="submit" name="submit" id="submit" class="btn btn-subscribe"><i class="fa fa-paper-plane"></i></button>
+            </div>
+            <!-- <button type="submit" class="btn btn-subscribe mt-2 w-100">Subscribe</button> -->
+          </form>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6  col-lg-3 col-xl-2 col-xxl-3 mb-4 mb-md-0 footer-company">
+          <h2 class="footer-heading">Company</h2>
+          <ul class="list-unstyled">
+            <li><a href="{% url 'about' %}" class="pt-1 d-block">About Us</a></li>
+            <li><a href="" class="pt-1 d-block">Reviews</a></li>
+            <li><a href="{% url 'about' %}" class="pt-1 d-block">Our Team</a></li>
+            <li><a href="{% url 'career' %}" class="pt-1 d-block">Career</a></li>
+            <li><a href="{% url 'blogs' %}" class="pt-1 d-block">Blog</a></li>
+            <li><a href="{% url 'contact' %}" class="pt-1 d-block">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6  col-lg-3 col-xl-3 col-xxl-3  mb-4 mb-md-0 mt-lg-0 footer-services mt-0 mt-sm-4" style="padding-left: 20px;">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="pt-1 d-block">Digital Marketing</a></li>
+            <li><a href="#" class="pt-1 d-block">Social Media Marketing</a></li>
+            <li><a href="#" class="pt-1 d-block">Google Ads Management</a></li>
+            <li><a href="#" class="pt-1 d-block">Strategy & Consulting</a></li>
+            <li><a href="#" class="pt-1 d-block">Full-Stack Development</a></li>
+            <li><a href="#" class="pt-1 d-block">Search Engine Optimization</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-4 mb-md-0 mt-4 mt-lg-0 contact-footer"
+          style="font-size: 14px !important;">
+          <h2 class="footer-heading">Get in Touch</h2>
+          <div class="row d-flex align-items-end">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-start align-items-start">
+             
+                <img src="{% static 'images/america.png' %}" alt="" width="70" height="70" style="margin-left: -16px;object-fit: cover;">
+            
+              <ul>
+                <li class="d-flex align-items-center justify-content-start"><span class="list-text">HQ | Fairfax, Virginia, USA</span></li>
+                <!-- <li class="pt-1"><i class="icon-social fa fa-map-marker"></i><span class="list-text">Fairfax, Virginia,
+                    USA</span></li> -->
+                <li class="pt-1"><a href="tel:+1 (800) 995-9914"></i><span
+                      class="list-text">+1 (800) 995-9914</span></a>
+                </li>
+                <li class="pt-1"><a href="mailto:hi_usa@bridgerds.com "><span
+                      class="list-text">hi_usa@bridgerds.com </span></a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-start align-items-start mt-3">
+              <img src="{% static 'images/canada.png' %}" alt="" width="70" height="70" style="margin-left: -16px;object-fit: cover;">
+            
+              <ul class="w-100">
+                <li class="d-flex align-items-center justify-content-start"><span class="list-text">Canada Office | Calgary, Alberta</span></li>
+                <!-- <li class="pt-1"><i class="icon-social fa fa-map-marker"></i><span class="list-text">Calgary, Alberta,
+                    Canada</span></li> -->
+                <li class="pt-1"><a href="tel:+1 (416) 579-2807"></i><span
+                      class="list-text">+1 (416) 579-2807</span></a>
+                </li>
+                <li class="pt-1"><a href="mailto:hi_ca@bridgerds.com "></i><span
+                      class="list-text">hi_ca@bridgerds.com </span></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-4 mb-0 mb-md-0">
+          <p class="text-center">© 2019 - 2023 Bridger Digital Solutions Inc., all rights reserved. |  <a href="{% url 'privacy' %}" class="text-decoration-none text-white"> Privacy Policy</a> </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal -->
+<div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content px-2 py-2">
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="exampleModalLabel">Service Request Form</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding: 0 1rem !important;">
+        <form id="myform"  action="">
+          <div class="row">
+
+            <div class="col-md-6 mb-2 d-flex align-items-center justify-content-between" style="position: relative;">
+              <input name="name" onchange="display()" required type="text" class="form-control w-100 modal-input" id="contact-form-name" placeholder="Name and Surname">
+              <i class="text-danger mandatory" style="position: absolute;left: 160px;">&#42;</i>
+            </div>
+            <div class="col-md-6 mb-2 d-flex align-items-center justify-content-between" style="position: relative;">
+              <input name="email" onchange="display()" required type="email" class="form-control modal-input" id="contact-form-email" placeholder="Your Email address">
+              <i class="text-danger mandatory" style="position: absolute;left: 153px;">&#42;</i>
+            </div>
+            <div class="col-md-12 mt-2">
+              <label for="" class="mb-2">What services can we help you with? <span
+
+                  class="text-danger">*</span></label>
+              <div class="d-flex align-items-center justify-content-between w-100">
+                <div class="checkboxes row">
+                  {% for service in services %}
+                  <div class="d-flex align-items-center justify-content-start mb-2 col-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input   type="checkbox" width="15" height="15" name="" id="" class="check" value="{{ service.name }}"> <span class="mx-0 mx-sm-3">{{ service.name }}</span>
+                  </div>
+                  
+                  
+                  {% endfor %}  
+
+                  
+                </div>
+              
+              </div>
+
+            </div>
+            <div class="col-md-7">
+              <div class="g-recaptcha" data-sitekey="6Lf7rmckAAAAANCXOkgqhZVL4zU-2He8zW35iqkt" data-callback="verifyCallback"></div>
+
+              <!-- элемент для вывода ошибок -->
+              <div class="text-danger" id="recaptchaError"></div>
+
+
+            </div>
+
+          </div>
+          <div class="modal-footer d-flex align-items-center justify-content-start">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <button type="submit" class="btn btn-xs px-3 btn-modal mx-auto hidden" id="contact-form-button">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-body1 py-5 d-flex flex-column align-items-center justify-content-center" style="padding: 0 1rem !important;">
+      <h2 class="mb-3 fw-600 text-center text-upper mt-4">Thank you for your request!</h2>
+      <i style="font-size: 60px;" class="fa fa-check main-content__checkmark text-success mb-5" id="checkmark"></i>
+      </div>
+      
+     
+      
+
+    </div>
+   
+  </div>
+</div>
+

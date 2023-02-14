@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/blog-detail.css' %}">
+{% endblock %}
+
+{% block meta-description %}
+<meta name="description" content="{{blog.meta_description}}">
+{% endblock %}
+
+{% block title %}{{blog.meta_title}}{% endblock %}
+
+
+
+
+{% block content %}
+<!--Blog detail div-->
+
+<div class="blog-detail-section w-100 py-5">
+    <div class="container-fluid pt-5">
+        <div class="row pt-5">
+            <div class="blog-content col-lg-8 col-12 col-sm-12 col-md-12 col-xl-8 col-xxl-8 pt-5">
+                <div class="blog-detail-item">
+                    <div class="blog-item-box">
+
+                        <div class="thumb">
+                            <a href="">
+                                <img width="730" height="382" src="{{ object.image.url }}"
+                                    class="blog-detail-img" alt="">
+                                <div class="date">
+                                    {{ blog.created_at | date:"F d" }} <strong>{{ blog.created_at | date:"Y" }}</strong>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <!-- <li>
+                                        <i class="fas fa-folder-open"></i>
+                                    </li>
+                                    <li><a href="">Atrificial</a>
+                                    </li>
+                                    <li><a href="">Store</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <h1>{{ object.title }}</h1>
+                            <div>{{ object.description | safe }}</div>
+                            <!-- <div class="is-layout-flex wp-container-3 wp-block-columns">
+                                
+                                <div class="w-100 d-flex align-items-center">
+                                    <div class="row w-100 d-flex align-items-center justify-content-start">
+                                        <div class="col-md-5">
+                                            <div class="share-button">
+                                                <input class="toggle-input" id="toggle-input" type="checkbox" />
+                                                <label for="toggle-input" class="toggle"></label>
+                                                <ul class="network-list">
+                                                    <li class="twitter">
+                                                        <a href="#">Share on Twitter</a>
+                                                    </li>
+                                                    <li class="googleplus">
+                                                        <a href="#">Share on Google+</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div> -->
+
+                            <!-- <div class="post-pagi-area">
+                                <a
+                                    href=""><i
+                                        class="fas fa-angle-double-left"></i> Previus Post</a>
+                                <a
+                                    href="">Next
+                                    Post <i class="fas fa-angle-double-right"></i></a>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar col-lg-4 col-12 col-sm-12 col-md-12 col-xl-4 col-xxl-4 pt-5">
+                <div class="sidebar-item">
+                    <div class="title">
+                        <h4>Recent Posts</h4>
+                    </div>
+                    <div class="sidebar-item recent-post">
+                        <ul>
+                            {% for blog in blogs %}
+                            <li>
+                                <div class="thumb"><img width="1146" height="600"
+                                        src="{{ blog.image.url }}"
+                                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"></div>
+                                <div class="info"><a
+                                        href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a>
+                                    <div class="meta-title">
+                                        <span class="post-date"><i class="fas fa-clock"></i>{{ blog.created_at | date:"F d" }} <strong>{{ blog.created_at | date:"Y" }}</strong></span>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

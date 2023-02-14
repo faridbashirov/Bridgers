@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-description %}
+
+<meta name="description" content="Stay informed and up-to-date with the latest digital marketing trends and news. Read our articles and insights to improve your online marketing efforts">
+
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+{% endblock %}
+
+{% block title %}Digital Marketing News | Blog | Bridger DS Inc.{% endblock %}
+
+<!--Blogs section-->
+{% block content %}
+
+<div class="blog-content-section w-100 pt-5">
+  <div class="container-fluid mt-5 pt-5">
+    <div class="row d-flex align-items-center">
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4 col-xxl-5 d-flex flex-column align-items-center blog-content-header">
+        <h1>Let's create an impact together!</h1>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 col-xxl-7 content-section">
+        <p>Welcome to our marketing agency blog! Here, we share the latest industry trends, tips, and insights to help
+          you grow your business and reach your target audience. From digital marketing strategies to creative ideas, we
+          cover everything you need to know to take your marketing to the next level. Subscribe to stay updated and join
+          the conversation.
+        </p>
+        <!-- <p>
+          We Build Brands That Become A Customer Favorites.
+        </p> -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="our-blogs w-100 pb-5">
+    <div class="container-fluid py-5">
+      <div class="row pt-5">
+        {% for blog in blogs %}
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+          <div class="blog-item w-100">
+              <div class="thumb">
+              <a href="{% url 'blog_detail' blog.slug %}">
+              <img src="{{ blog.image.url }}">
+              <div class="date">
+                {{ blog.created_at | date:"F d" }} <strong>{{ blog.created_at | date:"Y" }}</strong>
+               
+              </div> 
+              
+              </a>
+              </div>
+              <div class="blog-info">
+              <!-- <div class="meta">
+              <ul>
+              <li>
+              <i class="fas fa-folder-open"></i>
+              </li>
+              <li><a href="blog-detail.html">Atrificial</a></li> <li><a href="blog-detail.html">Store</a></li> </ul>
+              </div> -->
+              <h5>
+                <a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a>
+              </h5>
+              <p>{{ blog.small_description }}</p>
+              <a class="btn-simple px-3 py-1" href="{% url 'blog_detail' blog.slug %}">Read more</a>
+  
+              </div>
+              </div>
+      </div>
+  {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

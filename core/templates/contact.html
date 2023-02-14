@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-description %}
+    <meta name="description" content="Get in touch with Bridger DS Inc. today and learn how we can help you achieve your business goals. Contact us now! Our team will be happy to assist you">
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %}Contact us now | Fairfax, Virginia | Bridger DS Inc.{% endblock %}
+
+{% block content %}
+  <!--Sidebar and contact form-->
+
+  <div class="contact-section w-100 py-5">
+    <div class="container-fluid pt-0 pt-lg-5">
+      <div class="row py-3 py-lg-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-5 col-xxl-4 order-2 order-lg-1">
+          <div class="info-items">
+            <h5 class="mb-3 info-item pb-3">USA OFFICE</h5>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <div class="info">
+                <p>
+                  4000 Legato Rd suite 1100, Fairfax, VA 22033, USA
+                </p>
+
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info">
+
+                <p>
+                  +1 (800) 995-9914
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item mb-5">
+              <div class="info-icon">
+                <i class="fas fa-envelope-open"></i>
+              </div>
+              <div class="info">
+
+                <p>
+                  hi_usa@bridgerds.com
+                </p>
+              </div>
+            </div>
+            <h5 class="mb-3 info-item pb-3">CANADA OFFICE</h5>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <div class="info">
+                <p>
+                  Calgary, Alberta
+                </p>
+
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info">
+
+                <p>
+                  +1 (416) 579-2807
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope-open"></i>
+              </div>
+              <div class="info">
+
+                <p>
+                  hi_ca@bridgerds.com
+                </p>
+              </div>
+            </div>
+            <div class="footer-social mt-4">
+              <div class="row">
+                <div class="col-md-3 social-item"><a href="https://goo.gl/maps/REPVjydqJosk4Eix6" class="text-white"><i class="fa fa-google"></i></a></div>
+                <div class="col-md-3 social-item"><a href="https://www.linkedin.com/company/bridger-digital-solutions" class="text-white"><i class="fa fa-linkedin"></i></a></div>
+                <div class="col-md-3 social-item"><a href="https://www.facebook.com/profile.php?id=100089509301548" class="text-white"><i class="fa fa-facebook"></i></a></div>
+                <div class="col-md-3 social-item"><a href="https://www.instagram.com/bridger.ds/" class="text-white"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-7 col-xxl-8 right-item order-1 order-lg-2 mb-4 mb-lg-0">
+          <h2 class="mb-3">
+            We’d love to hear from you anytime
+          </h2>
+
+          <p class="mb-4">Fill out the form we will contact you within 24 hours</p>
+          {% include 'includes/messages.html' %}
+          <form action="" method="post">
+            {% csrf_token %}
+            <!-- <input type="text" class="form-control mb-3 w-100 py-2" placeholder="Full Name"> -->
+            {{ form.name }}
+            <!-- <input type="email" class="form-control mb-3 w-100 py-2" placeholder="Email"> -->
+            {{ form.email }}
+            <!-- <input type="text" class="form-control mb-3 w-100 py-2" placeholder="Company Name"> -->
+            {{ form.company }}
+            <!-- <input type="text" class="form-control mb-3 w-100 py-2" placeholder="Website"> -->
+            {{ form.website }}
+            <!-- <select class="form-select mb-3 py-2" aria-label="Default select example">
+              <option selected class="py-3">United States</option>
+              <option value="1" class="py-3">Canada</option>
+              <option value="3" class="py-3">Other</option>
+
+            </select> -->
+            {{ form.location }}
+            <!-- <textarea rows="3" class="form-control mb-3 w-100" placeholder="Text"></textarea> -->
+            {{ form.message }}
+            {{form.capthca}}
+
+            <button class="btn btn-submit px-4 mt-3" type="submit">Send Message </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
